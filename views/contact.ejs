@@ -1,0 +1,31 @@
+<% include header%>
+<body>
+
+<div class="container-fluid">
+<div class="row" >
+<div class="col-xs-12">
+<div class="new"> 
+    <div class="Contact">Contact details</div>
+</div>
+</div>
+</div>
+<div class="row" >
+<div class="center">
+<div class="col-xs-12">
+<form >
+<p><h2>First Name<sup style="color:red">*</sup></p></h2>
+<input type="text" id ="fname" name="FirstName"  required ><br>
+<p><h2>Last Name<sup style="color:red">*</sup></h2></p>
+<input type="text" id ="lname" name="Lastname"  required><br>
+
+<p><h2>E-mail Address </h2></p>
+<input type="email" id ="email" name="email" required ><br>
+<p><h2>Any thing you would like to know?<h2></p><br>
+<textarea style="height:150px;width:150px"></textarea><br>
+<button type="button" name="Submit" onclick="nameCheck()">Submit</button>
+
+</form>
+</div>
+</div>
+</div>
+<% include footer%>
