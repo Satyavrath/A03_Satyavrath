@@ -1,0 +1,28 @@
+<% include header%>
+<body>
+
+ <div class="container-fluid">
+    <div class="row" >
+    <div class="col-xs-12">
+    <div class="new_L"> 
+                    
+    <div class="Calci">LOAN CALCULATOR</div>
+  </div>
+</div>
+</div>
+<form>
+<p><h2>Loan Amount: $<input id = "amount" type="number"  onchange="computeLoan()"></p></h2><br>
+<p><h2>Interest Rate: <input id = "interest_rate" type="number" onchange="computeLoan()"></p></h2><br>
+<p><h2>Months: <input id = "months" type="number" min = "1" max = "72" onchange="computeLoan()"></p></h2>
+<div class="position">
+<button type="button" name="Submit" onclick="computeLoan2()">Submit</button>
+<input type = "reset" value="Reset" onclick="computeLoan3()"/>
+</div>
+<h2 id ="Interest"></h2>
+<h2 id ="Interest_total"></h2>
+<h2 id="payment"></h2>
+<canvas id ="pie" width="500px" height="300px"onclick="computeLoan2()"></canvas>
+
+</form>
+
+<% include footer %>
