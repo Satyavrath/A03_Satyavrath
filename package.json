@@ -1,5 +1,5 @@
 {
-    "name": "A03",
+    "name": "a03",
     "version": "0.0.1",
     "description": "resume app",
     "main": "app.js",
@@ -10,7 +10,7 @@
         "ejs": "latest"
     },
     "scripts": {
-        "start": "node app.js"
+        "start" : "node app.js"
     },
     "author": "Satyavrath Injamuri",
     "homepage": "https://bitbucket.org/satyalalla/w07/",
@@ -19,4 +19,5 @@
         "url": "https://bitbucket.org/satyalalla/w07/"
     },
     "license": "Apache-2.0"
+    
 }
