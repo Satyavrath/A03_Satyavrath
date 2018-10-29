@@ -4,7 +4,6 @@ const logger = require("morgan")
 const bodyParser = require("body-parser")
 
 const app = express()  // make express app
-const port = 8081
 const fs = require('fs')
 const port = process.env.port || 8081
 
@@ -75,7 +74,7 @@ res.render('404.ejs')
 
 // Listen for an application request on designated port
 app.listen(port, function () {
-console.log('\nWeb app started and listening on http://localhost:' + port + '.')
+console.log('\nWeb app started and listening on' + port + '.')
 
 console.log('\nKeep this open while serving, and use CTRL-C to quit.')
 })
