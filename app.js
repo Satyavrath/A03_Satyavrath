@@ -6,6 +6,7 @@ const bodyParser = require("body-parser")
 const app = express()  // make express app
 const port = 8081
 const fs = require('fs')
+const port = process.env.port || 8081
 
 // ADD THESE COMMENTS AND IMPLEMENTATION HERE
 // 1 set up the view engine
