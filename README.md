@@ -19,4 +19,3 @@ page 2---->Loan Calculator---> Page gives information about loan payment
 page 3---->Contact Information---> Page gives information about contact information
 page 4---->Test case---> Page gives information about test cases 
 
-My browser link https://satyavrath.github.io/A03_Satyavrath/   04  ..
