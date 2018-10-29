@@ -5,7 +5,7 @@ const bodyParser = require("body-parser")
 
 const app = express()  // make express app
 const fs = require('fs')
-const port = process.env.port || 8081
+const port = process.env.PORT || 8081
 
 // ADD THESE COMMENTS AND IMPLEMENTATION HERE
 // 1 set up the view engine
@@ -33,13 +33,7 @@ app.use(bodyParser.json());
 var accessLogStream = fs.createWriteStream(__dirname + '/access.log', { flags: 'a' });
 app.use(logger('dev'));
 app.use(logger('combined', { stream: accessLogStream }));
-if (process.env.NODE_ENV === 'production') {
-  app.get('*', function (req, res, next) {
-  if (req.headers['x-forwarded-proto'] != 'https') {
-    res.redirect('https://resumesite563.herokuapp.com/' + req.url)
-  } else { next() }
-})
-}
+
 
 // 4 http GET default page at /
 app.get('/', function (req, res) {
