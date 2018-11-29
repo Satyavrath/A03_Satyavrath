@@ -11,13 +11,12 @@ Header{
 	margin-right: 980px;
 	margin-bottom: 5px;
 	
-		}	
+	}	
 
 body{
 	
-	background-image:url(images.jpg);
+	background-image:url(/images/images.jpg);
 	background-size: cover;
-	
 	height:fit-content;
 	}
 
